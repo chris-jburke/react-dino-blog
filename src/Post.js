@@ -42,7 +42,7 @@ class Comment extends Component {
 	render() {
 		return (
 			<div>
-				<h3>{this.props.commentHeader}</h3>
+				<h5>{this.props.commentHeader}</h5>
 				<p>{this.props.commentBody}</p>
 			</div>
 		)
@@ -82,7 +82,7 @@ class App extends Component{
 				<Content content={this.state.body} />
 				<input
 					type="button"
-					value="Add body"
+					value="Add body content"
 				 	onClick={this.changeBody}
 				/>
 				<Commentpost />
